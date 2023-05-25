@@ -57,7 +57,7 @@ def main():
 
     timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
     log_file = f"spray-log_{timestamp}.txt"
-    logging.basicConfig(level=logging.DEUBG, format='%(asctime)s %(levelname)s %(message)s',
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s',
                         handlers=[logging.FileHandler(log_file), logging.StreamHandler()])
 
     try:
